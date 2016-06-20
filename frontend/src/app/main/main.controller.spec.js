@@ -2,12 +2,20 @@
   'use strict';
 
   describe('MainController', function () {
-    var vm;
+    var vm, $http;
+
+    $http = {
+      get: jasmine.createSpy().and.returnValue({
+        success: jasmine.createSpy()
+      })
+    };
 
     beforeEach(module('frontend'));
     beforeEach(inject(function (_$controller_) {
 
-      vm = _$controller_('MainController', {});
+      vm = _$controller_('MainController', {
+        $http: $http
+      });
 
     }));
 
@@ -17,6 +25,10 @@
 
     it('should define menu', function () {
       expect(vm.menu).toBeDefined();
+    });
+
+    it('should get workshops', function () {
+      expect($http.get).toHaveBeenCalled();
     });
 
   });

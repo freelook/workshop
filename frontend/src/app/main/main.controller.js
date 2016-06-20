@@ -6,21 +6,18 @@
     .controller('MainController', MainController);
 
   /** @ngInject */
-  function MainController(menu) {
+  function MainController($http, menu) {
     var vm = this;
+
+    function init() {
+      var url = 'https://raw.githubusercontent.com/freelook/workshop/dev/frontend/src/assets/json/workshops.json';
+      $http.get(url).success(function (res) {
+        vm.workshops = res.workshops;
+      });
+    }
 
     vm.menu = menu;
 
-    vm.workshops = [
-      {
-        id: '1',
-        title: 'Введение',
-        description: 'Мастерская full stack javascript',
-        img: 'http://www.programmableweb.com/sites/default/files/MEAN-stack.jpg',
-        video: '',
-        content: '',
-        tags: ['angular', 'material']
-      }
-    ];
+    init();
   }
 })();
