@@ -6,18 +6,18 @@
     .controller('MainController', MainController);
 
   /** @ngInject */
-  function MainController($http, menu) {
+  function MainController(workshops, menu) {
     var vm = this;
 
     function init() {
-      var url = 'https://raw.githubusercontent.com/freelook/workshop/dev/frontend/src/assets/json/workshops.json';
-      $http.get(url).success(function (res) {
-        vm.workshops = res.workshops;
+      workshops.get().success(function (workshops) {
+        vm.workshops = workshops;
       });
     }
 
     vm.menu = menu;
 
     init();
+
   }
 })();

@@ -2,9 +2,9 @@
   'use strict';
 
   describe('MainController', function () {
-    var vm, $http;
+    var vm, workshops;
 
-    $http = {
+    workshops = {
       get: jasmine.createSpy().and.returnValue({
         success: jasmine.createSpy()
       })
@@ -14,7 +14,7 @@
     beforeEach(inject(function (_$controller_) {
 
       vm = _$controller_('MainController', {
-        $http: $http
+        workshops: workshops
       });
 
     }));
@@ -28,7 +28,7 @@
     });
 
     it('should get workshops', function () {
-      expect($http.get).toHaveBeenCalled();
+      expect(workshops.get).toHaveBeenCalled();
     });
 
   });
