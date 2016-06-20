@@ -1,0 +1,7 @@
+toolbar {
+  display: block;
+}
+
+toolbar .toolbar {
+  background: #538ed4;
+}

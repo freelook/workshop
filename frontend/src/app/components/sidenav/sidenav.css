@@ -1,0 +1,21 @@
+sidenav {
+  display: block;
+}
+
+sidenav .logo {
+  background: #538ed4 url("/assets/images/workshop.png") no-repeat center center;
+  background-size: cover;
+  height: 200px;
+  box-shadow: 2px 2px 2px 1px rgb(148, 148, 148);
+}
+
+sidenav .menu .item {
+  display: none;
+  height: 0;
+}
+
+sidenav .menu .item.active {
+  display: inline-block;
+  height: auto;
+  transition: 1s all ease-out;
+}

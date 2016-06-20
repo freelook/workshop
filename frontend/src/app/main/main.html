@@ -1,19 +1,41 @@
-<md-sidenav md-component-id="left" md-whiteframe="3">
-  <div layout="column">
+<sidenav></sidenav>
+<toolbar></toolbar>
+<content class="main">
 
+  <div layout="row" layout-align="center center">
+    <div class="topics">
+      <span class="bkt">{</span>
+      <span>workshop :</span>
+      <span><acme-malarkey values="::main.menu"></acme-malarkey></span>
+      <span class="bkt">}</span>
+    </div>
   </div>
-</md-sidenav>
 
-<section layout="column" flex>
+  <md-divider></md-divider>
 
-  <md-toolbar layout="row">
-    <md-button ng-click="main.toggleLeftMenu()">
-      <i class="material-icons">menu</i>
-    </md-button>
-  </md-toolbar>
+  <div layout="row" layout-align="center center" layout-wrap>
+    <md-card flex="30" flex-sm="45" flex-xs="90" ng-repeat="workshop in ::main.workshops">
+      <md-card-title>
+        <md-card-title-text>
+          <div class="md-headline" ng-bind="workshop.title"></div>
+          <div class="md-subhead">
+            <a ng-repeat="tag in ::workshop.tags" ng-bind="tag"></a>
+          </div>
+        </md-card-title-text>
+        <md-card-title-media>
+          <div class="md-media-lg card-media" ng-if="workshop.img">
+            <img ng-src="{{::workshop.img}}">
+          </div>
+        </md-card-title-media>
+      </md-card-title>
+      <md-card-content ng-bind="workshop.description">
+      </md-card-content>
+      <md-card-actions layout="row" layout-align="end center">
+        <md-button class="md-primary">открыть</md-button>
+      </md-card-actions>
+    </md-card>
+  </div>
 
-  <md-content>
+</content>
 
-  </md-content>
 
-</section>

@@ -1,25 +1,22 @@
 (function () {
   'use strict';
 
-  describe('controllers', function () {
-    var vm, $mdSidenav;
-
-    $mdSidenav = jasmine.createSpy().and.returnValue({
-      toggle: jasmine.createSpy()
-    });
+  describe('MainController', function () {
+    var vm;
 
     beforeEach(module('frontend'));
     beforeEach(inject(function (_$controller_) {
 
-      vm = _$controller_('MainController', {
-        $mdSidenav: $mdSidenav
-      });
+      vm = _$controller_('MainController', {});
 
     }));
 
-    it('should toggle left menu', function () {
-      vm.toggleLeftMenu();
-      expect($mdSidenav).toHaveBeenCalledWith('left');
+    it('should define vm', function () {
+      expect(vm).toBeDefined();
+    });
+
+    it('should define menu', function () {
+      expect(vm.menu).toBeDefined();
     });
 
   });

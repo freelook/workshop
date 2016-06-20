@@ -1,0 +1,12 @@
+<md-sidenav md-component-id="left" md-whiteframe="3">
+  <div layout="column">
+    <div class="logo"></div>
+    <div layout="column" ng-repeat="(key,value) in ::sidenav.menu" class="menu">
+      <md-button class="md-primary bold" ng-bind="key" ng-attr-aria-label="key"
+                 ng-click="sidenav.currentKey=key"></md-button>
+      <div class="item" ng-class="{active:key===sidenav.currentKey}">
+        <md-button class="md-primary" ng-repeat="menu in value" ng-bind="menu" ng-attr-aria-label="menu"></md-button>
+      </div>
+    </div>
+  </div>
+</md-sidenav>
