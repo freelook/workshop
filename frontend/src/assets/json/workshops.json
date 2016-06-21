@@ -14,15 +14,15 @@
   },
     {
     "id": "2",
-    "name": "start",
-    "title": "Введение",
+    "name": "setup",
+    "title": "Установка git",
     "description": "Мастерская full stack javascript",
-    "img": "http://www.programmableweb.com/sites/default/files/MEAN-stack.jpg",
+    "img": "https://git-for-windows.github.io/img/git_logo.png",
     "video": "",
     "content": "",
     "tags": [
-      "angular",
-      "material"
+      "git",
+      "webstorm"
     ]
   }
 ]
