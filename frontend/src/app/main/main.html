@@ -1,6 +1,6 @@
 <sidenav></sidenav>
 <toolbar></toolbar>
-<content class="main">
+<content class="main" flex>
 
   <div layout="row" layout-align="center center">
     <div class="topics">
@@ -10,8 +10,6 @@
       <span class="bkt">}</span>
     </div>
   </div>
-
-  <md-divider></md-divider>
 
   <div layout="row" layout-align="center center" layout-wrap>
     <md-card flex="30" flex-sm="45" flex-xs="90" ng-repeat="workshop in ::main.workshops">
@@ -31,11 +29,11 @@
       <md-card-content ng-bind="workshop.description">
       </md-card-content>
       <md-card-actions layout="row" layout-align="end center">
-        <md-button class="md-primary">открыть</md-button>
+        <md-button class="md-primary" ng-click="main.openWorkshop(workshop.id)">открыть</md-button>
       </md-card-actions>
     </md-card>
   </div>
 
 </content>
 
-
+<footer></footer>

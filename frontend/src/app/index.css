@@ -55,3 +55,7 @@ html, body {
 .bold {
   font-weight: bold;
 }
+
+.block {
+  margin: 7px;
+}

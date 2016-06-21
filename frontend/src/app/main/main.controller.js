@@ -6,7 +6,7 @@
     .controller('MainController', MainController);
 
   /** @ngInject */
-  function MainController(workshops, menu) {
+  function MainController($location, workshops, menu) {
     var vm = this;
 
     function init() {
@@ -16,6 +16,9 @@
     }
 
     vm.menu = menu;
+    vm.openWorkshop = function(name){
+      $location.path(['name', name].join('/'));
+    };
 
     init();
 

@@ -1,6 +1,7 @@
 [
   {
     "id": "1",
+    "name": "intro",
     "title": "Введение",
     "description": "Мастерская full stack javascript",
     "img": "http://www.programmableweb.com/sites/default/files/MEAN-stack.jpg",

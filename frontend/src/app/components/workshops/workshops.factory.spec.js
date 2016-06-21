@@ -24,6 +24,12 @@
       workshops.get();
       expect($http.get).toHaveBeenCalledWith(WORKSHOPS_URL + 'frontend/src/assets/json/workshops.json');
     });
+
+    it('should get one workshop', function () {
+      var name = 'name';
+      workshops.one(name);
+      expect($http.get).toHaveBeenCalledWith(WORKSHOPS_URL + 'frontend/src/assets/json/workshops/' + name + '.json');
+    });
   });
 
 })();

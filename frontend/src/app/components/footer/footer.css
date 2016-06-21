@@ -1,0 +1,10 @@
+footer {
+  display: block;
+  color: #999999;
+  margin: 7px;
+  box-shadow: 2px 2px 2px 1px rgb(148, 148, 148);
+}
+
+footer .heart {
+  color: red;
+}
