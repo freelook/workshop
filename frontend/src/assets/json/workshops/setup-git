@@ -1,0 +1,13 @@
+{
+  "id": "2",
+  "name": "git-setup",
+  "title": "Установка и настройка git",
+  "description": "Мастерская full stack javascript. Начало работы с git.",
+  "img": "https://git-for-windows.github.io/img/git_logo.png",
+  "video": "https://www.youtube.com/embed/UNknM5G4trc",
+  "content": "",
+  "tags": [
+    "git",
+    "webstorm"
+  ]
+}
