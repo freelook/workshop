@@ -21,5 +21,16 @@
       "git",
       "webstorm"
     ]
+  },
+      {
+    "id": "3",
+    "name": "setup-webstorm",
+    "title": "Установка webstorm",
+    "description": "Мастерская full stack javascript. Начало работы с IDE Webstorm.",
+    "img": "https://confluence.jetbrains.com/download/attachments/15797318/WI?version=2&modificationDate=1449749629000&api=v2",
+    "tags": [
+      "ide",
+      "webstorm"
+    ]
   }
 ]
