@@ -1,0 +1,13 @@
+  {
+    "id": "4",
+    "name": "setup-node",
+    "title": "Установка и настройка git node.js",
+    "description": "Мастерская full stack javascript. Начало работы с node.js.",
+    "img": "https://confluence.jetbrains.com/download/attachments/15797318/WI?version=2&modificationDate=1449749629000&api=v2",
+    "video": "https://www.youtube.com/embed/tE3B3UgnSZw",
+    "content": "",
+    "tags": [
+      "node",
+      "webstorm"
+    ]
+  }
