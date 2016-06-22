@@ -1,4 +1,4 @@
-(function() {
+(function () {
   'use strict';
 
   angular
@@ -6,9 +6,15 @@
     .run(runBlock);
 
   /** @ngInject */
-  function runBlock($log) {
+  function runBlock($log, $window) {
 
     $log.debug('run: workshop');
+
+    // production redirect
+    if ($window.location.host === 'freelook.github.io') {
+      $window.location.href = 'http://workshop.freelook.info/';
+    }
+
   }
 
 })();
