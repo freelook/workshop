@@ -11,5 +11,18 @@
       "angular",
       "material"
     ]
+  },
+    {
+    "id": "2",
+    "name": "setup",
+    "title": "Установка git",
+    "description": "Мастерская full stack javascript",
+    "img": "https://git-for-windows.github.io/img/git_logo.png",
+    "video": "",
+    "content": "",
+    "tags": [
+      "git",
+      "webstorm"
+    ]
   }
 ]
