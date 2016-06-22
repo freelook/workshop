@@ -1,0 +1,14 @@
+  {
+    "id": "5",
+    "name": "setup-yo",
+    "title": "Установка генератора yeoman",
+    "description": "Мастерская full stack javascript. Начало работы с генератором yeoman",
+    "img": "https://pbs.twimg.com/profile_images/3786155988/46ea2dd8b1bdd31a8ba61044cb5b6ebe_400x400.png",
+    "video": "https://www.youtube.com/embed/sJYwwZ8tRFA",
+    "content": "",
+    "tags": [
+      "yeoman",
+      "node",
+      "yo"
+    ]
+  }
