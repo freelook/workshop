@@ -1,0 +1,14 @@
+  {
+    "id": "6",
+    "name": "setup-dev",
+    "title": "Процесс разработки",
+    "description": "Мастерская full stack javascript. Настройка процесса разработки. Введение в проект.",
+    "img": "http://wordpress.datamasonry.com/wp-content/uploads/2013/06/software-dev-agile-process.png",
+    "video": "https://www.youtube.com/embed/iCmaRUOM36o",
+    "content": "",
+    "tags": [
+      "git",
+      "yeoman",
+      "angular"
+    ]
+  }
