@@ -13,9 +13,9 @@
   },
     {
     "id": "2",
-    "name": "setup",
+    "name": "setup-git",
     "title": "Установка git",
-    "description": "Мастерская full stack javascript",
+    "description": "Мастерская full stack javascript. Начало работы с git.",
     "img": "https://git-for-windows.github.io/img/git_logo.png",
     "tags": [
       "git",
