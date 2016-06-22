@@ -1,0 +1,13 @@
+  {
+    "id": "7",
+    "name": "material-intro",
+    "title": "Angular material",
+    "description": "Мастерская full stack javascript. Введение и начало работы с angular material",
+    "img": "https://www.google.com/imgres?imgurl=https%3A%2F%2Fraw.githubusercontent.com%2Fangular%2Fangular.io%2Fmaster%2Fpublic%2Fresources%2Fimages%2Flogos%2Fangular2%2Fangular.png&imgrefurl=https%3A%2F%2Fangular.io%2Fdocs%2Fts%2Flatest%2Fguide%2Fwebpack.html&docid=edKN4uBbQYtU4M&tbnid=n5sqNpEUye7sVM%3A&w=250&h=250&bih=678&biw=1301&ved=0ahUKEwi2trex6rzNAhVE2mMKHUtQDdwQMwhSKCowKg&iact=mrc&uact=8",
+    "video": "https://www.youtube.com/embed/Bmk7S_t-DKM",
+    "content": "",
+    "tags": [
+      "angular",
+      "material"
+    ]
+  }
