@@ -25,6 +25,10 @@ wrench.readdirSyncRecursive('./gulp').filter(function (file) {
  *  main optimization build task
  */
 gulp.task('default', ['clean'], function () {
+  gulp.start('serve');
+});
+
+gulp.task('dist', function () {
   gulp.start('build');
 });
 
