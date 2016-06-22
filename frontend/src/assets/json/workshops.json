@@ -11,7 +11,7 @@
       "mean"
     ]
   },
-    {
+  {
     "id": "2",
     "name": "setup-git",
     "title": "Установка git",
@@ -22,7 +22,7 @@
       "webstorm"
     ]
   },
-      {
+  {
     "id": "3",
     "name": "setup-webstorm",
     "title": "Установка webstorm",
@@ -30,6 +30,17 @@
     "img": "https://confluence.jetbrains.com/download/attachments/15797318/WI?version=2&modificationDate=1449749629000&api=v2",
     "tags": [
       "ide",
+      "webstorm"
+    ]
+  },
+  {
+    "id": "4",
+    "name": "setup-node",
+    "title": "Установка node.js",
+    "description": "Мастерская full stack javascript. Начало работы с node.js",
+    "img": "https://confluence.jetbrains.com/download/attachments/15797318/WI?version=2&modificationDate=1449749629000&api=v2",
+    "tags": [
+      "node",
       "webstorm"
     ]
   }
