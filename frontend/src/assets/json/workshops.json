@@ -3,13 +3,11 @@
     "id": "1",
     "name": "intro",
     "title": "Введение",
-    "description": "Мастерская full stack javascript",
+    "description": "Мастерская full stack javascript. Введение в разработку.",
     "img": "http://www.programmableweb.com/sites/default/files/MEAN-stack.jpg",
-    "video": "",
-    "content": "",
     "tags": [
       "angular",
-      "material"
+      "node"
     ]
   },
     {
@@ -18,8 +16,6 @@
     "title": "Установка git",
     "description": "Мастерская full stack javascript",
     "img": "https://git-for-windows.github.io/img/git_logo.png",
-    "video": "",
-    "content": "",
     "tags": [
       "git",
       "webstorm"
