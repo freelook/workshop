@@ -2,7 +2,16 @@
 <toolbar></toolbar>
 <content class="workshop" flex>
 
-  workshop
+  <iframe ng-if="::workshop.item.video" ng-src="{{::workshop.trust(workshop.item.video)}}" frameborder="0" allowfullscreen></iframe>
+  <h3 class="md-headline block" ng-if="::workshop.item.title" ng-bind="::workshop.item.title"></h3>
+  <img class="img" ng-if="::workshop.item.img" ng-src="{{::workshop.item.img}}">
+
+  <div class="tags block" ng-if="::workshop.item.tags">
+    <a class="link" ng-repeat="tag in ::workshop.item.tags" ng-bind="tag" ng-click="workshop.tag(tag)"></a>
+  </div>
+
+  <div class="md-body-1 block" ng-if="::workshop.item.description" ng-bind="::workshop.item.description"></div>
+  <div class="md-body-1 block" ng-if="::workshop.item.content" ng-bind="::workshop.item.content"></div>
 
 </content>
 

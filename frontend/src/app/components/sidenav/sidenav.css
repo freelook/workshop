@@ -7,6 +7,7 @@ sidenav .logo {
   background-size: cover;
   height: 200px;
   box-shadow: 2px 2px 2px 1px rgb(148, 148, 148);
+  cursor: pointer;
 }
 
 sidenav .menu .item {

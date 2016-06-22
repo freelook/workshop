@@ -2,17 +2,18 @@
   'use strict';
 
   describe('SidenavController', function () {
-    var vm, $location;
+    var vm, sidenav;
 
-    $location = {
-      path: jasmine.createSpy()
+    sidenav = {
+      main: jasmine.createSpy(),
+      tag: jasmine.createSpy()
     };
 
     beforeEach(module('frontend'));
     beforeEach(inject(function (_$controller_) {
 
       vm = _$controller_('SidenavController', {
-        $location: $location
+        sidenav: sidenav
       });
 
     }));
@@ -23,7 +24,12 @@
 
     it('should open main', function () {
       vm.main();
-      expect($location.path).toHaveBeenCalledWith('/');
+      expect(sidenav.main).toHaveBeenCalled();
+    });
+
+    it('should open tag', function () {
+      vm.tag();
+      expect(sidenav.tag).toHaveBeenCalled();
     });
 
   });

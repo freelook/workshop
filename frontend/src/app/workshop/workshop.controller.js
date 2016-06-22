@@ -6,10 +6,17 @@
     .controller('WorkshopController', WorkshopController);
 
   /** @ngInject */
-  function WorkshopController($routeParams, workshops) {
+  function WorkshopController($sce, $routeParams, workshops, sidenav) {
+
+    var vm = this;
+
+    vm.trust = $sce.trustAsResourceUrl;
+    vm.tag = sidenav.tag;
 
     function init() {
-      workshops.one($routeParams.name);
+      workshops.one($routeParams.name).success(function (item) {
+        vm.item = item;
+      });
     }
 
     init();

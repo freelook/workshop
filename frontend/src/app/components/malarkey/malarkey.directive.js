@@ -18,21 +18,37 @@
 
     return directive;
 
+    function loop(values, typist) {
+      angular.forEach(values, function (value) {
+        if (angular.isArray(value)) {
+          loop(value.sort(function () {
+            return 0.5 - Math.random();
+          }), typist);
+        } else {
+          typist.type(value).pause().delete();
+        }
+      });
+    }
+
     function linkFunc(scope, el) {
 
-      var typist = malarkey(el[0], {
-        typeSpeed: 50,
-        deleteSpeed: 50,
-        pauseDelay: 3000,
-        loop: true,
-        postfix: ''
-      });
+      var values = scope.values,
+        isLoop = !angular.isString(values),
+        typist = malarkey(el[0], {
+          typeSpeed: 50,
+          deleteSpeed: 50,
+          pauseDelay: 3000,
+          loop: isLoop,
+          postfix: ''
+        });
 
       el.addClass('acme-malarkey');
 
-      angular.forEach(scope.values, function (value) {
-        typist.type(value).pause().delete();
-      });
+      if (isLoop) {
+        loop(values, typist);
+      } else {
+        typist.type(scope.values).pause();
+      }
     }
 
   }

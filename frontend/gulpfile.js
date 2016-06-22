@@ -31,3 +31,7 @@ gulp.task('default', ['clean'], function () {
 gulp.task('tdd', function () {
   gulp.start('test:auto');
 });
+
+gulp.task('e2e', function () {
+  gulp.start('protractor');
+});

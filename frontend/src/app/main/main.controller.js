@@ -6,8 +6,10 @@
     .controller('MainController', MainController);
 
   /** @ngInject */
-  function MainController($location, workshops, menu) {
+  function MainController($routeParams, workshops, sidenav, menu) {
     var vm = this;
+
+    vm.tag = $routeParams.tag;
 
     function init() {
       workshops.get().success(function (workshops) {
@@ -16,9 +18,9 @@
     }
 
     vm.menu = menu;
-    vm.openWorkshop = function(name){
-      $location.path(['name', name].join('/'));
-    };
+    vm.clear = sidenav.main;
+    vm.openTag = sidenav.tag;
+    vm.openWorkshop = sidenav.workshop;
 
     init();
 

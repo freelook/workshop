@@ -6,7 +6,9 @@
 
     name = 'name';
     workshops = {
-      one: jasmine.createSpy()
+      one: jasmine.createSpy().and.returnValue({
+        success: jasmine.createSpy()
+      })
     };
 
     $routeParams = {
@@ -27,7 +29,7 @@
       expect(vm).toBeDefined();
     });
 
-    it('should define vm', function () {
+    it('should call one', function () {
       expect(workshops.one).toHaveBeenCalledWith(name);
     });
 

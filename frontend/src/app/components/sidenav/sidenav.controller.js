@@ -6,13 +6,12 @@
     .controller('SidenavController', SidenavController);
 
   /** @ngInject */
-  function SidenavController($location, menu) {
+  function SidenavController(menu, sidenav) {
     var vm = this;
 
     vm.menu = menu;
-    vm.main = function () {
-      $location.path('/');
-    };
+    vm.main = sidenav.main;
+    vm.tag = sidenav.tag;
 
   }
 })();

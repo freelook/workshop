@@ -4,9 +4,11 @@
   angular
     .module('frontend')
     .value('menu', {
-      frontend: ['angular'],
-      backend: ['node'],
-      mobile: ['cordova']
+      processes: ['tdd', 'bdd', 'agile', 'e2e'],
+      frontend: ['angular', 'html', 'css', 'material'],
+      backend: ['node', 'express', 'mean'],
+      mobile: ['cordova', 'phonegap'],
+      tools: ['git', 'webstorm', 'nmp', 'bower', 'gulp']
     });
 
 })();

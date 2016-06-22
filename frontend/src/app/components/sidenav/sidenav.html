@@ -5,7 +5,8 @@
       <md-button class="md-primary bold" ng-bind="key" ng-attr-aria-label="key"
                  ng-click="sidenav.currentKey=key"></md-button>
       <div class="item" ng-class="{active:key===sidenav.currentKey}">
-        <md-button class="md-primary" ng-repeat="menu in value" ng-bind="menu" ng-attr-aria-label="menu"></md-button>
+        <md-button class="md-primary" ng-repeat="tag in value" ng-bind="tag" ng-attr-aria-label="tag"
+                   ng-click="sidenav.tag(tag)"></md-button>
       </div>
     </div>
   </div>

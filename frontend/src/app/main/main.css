@@ -1,15 +1,23 @@
-content.main .topics {
+content.main .tags {
   margin: 7px;
   font-size: 21px;
 }
 
-content.main .topics .bkt {
+content.main .tags .link {
+  color: #cccccc;
+}
+
+content.main .tags .bkt {
   font-size: x-large;
   color: #538ed4;
 }
 
 content.main md-divider {
   margin: 10px 0;
+}
+
+content.main md-card {
+  overflow: hidden;
 }
 
 content.main md-card .md-subhead a {

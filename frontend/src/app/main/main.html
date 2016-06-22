@@ -3,33 +3,36 @@
 <content class="main" flex>
 
   <div layout="row" layout-align="center center">
-    <div class="topics">
+    <div class="tags">
       <span class="bkt">{</span>
       <span>workshop :</span>
-      <span><acme-malarkey values="::main.menu"></acme-malarkey></span>
+      <acme-malarkey ng-if="!main.tag" values="::main.menu"></acme-malarkey>
+      <span ng-if="main.tag">
+        <acme-malarkey values="::main.tag"></acme-malarkey>
+        <i class="material-icons link" ng-click="main.clear()">close</i>
+      </span>
       <span class="bkt">}</span>
     </div>
   </div>
 
   <div layout="row" layout-align="center center" layout-wrap>
-    <md-card flex="30" flex-sm="45" flex-xs="90" ng-repeat="workshop in ::main.workshops">
+    <md-card flex="30" flex-sm="45" flex-xs="90" ng-repeat="workshop in ::main.workshops | filter:main.tag" md-scroll-y>
       <md-card-title>
         <md-card-title-text>
-          <div class="md-headline" ng-bind="workshop.title"></div>
+          <div class="md-headline" ng-bind="::workshop.title"></div>
           <div class="md-subhead">
-            <a ng-repeat="tag in ::workshop.tags" ng-bind="tag"></a>
+            <a class="link" ng-repeat="tag in ::workshop.tags" ng-bind="tag" ng-click="main.openTag(tag)"></a>
           </div>
         </md-card-title-text>
         <md-card-title-media>
-          <div class="md-media-lg card-media" ng-if="workshop.img">
+          <div class="md-media-lg card-media" ng-if="::workshop.img">
             <img ng-src="{{::workshop.img}}">
           </div>
         </md-card-title-media>
       </md-card-title>
-      <md-card-content ng-bind="workshop.description">
-      </md-card-content>
+      <md-card-content ng-bind="::workshop.description"></md-card-content>
       <md-card-actions layout="row" layout-align="end center">
-        <md-button class="md-primary" ng-click="main.openWorkshop(workshop.id)">открыть</md-button>
+        <md-button class="md-primary" ng-click="main.openWorkshop(workshop.name)">открыть</md-button>
       </md-card-actions>
     </md-card>
   </div>

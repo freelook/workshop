@@ -59,3 +59,8 @@ html, body {
 .block {
   margin: 7px;
 }
+
+.link {
+  outline: 0;
+  cursor: pointer;
+}
