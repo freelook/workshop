@@ -1,0 +1,13 @@
+  {
+    "id": "14",
+    "name": "build",
+    "title": "Сборка проекта",
+    "description": "Мастерская full stack javascript. Начало работы с gulp сборкой. Скрипты конфигурации и обновления проекта. Публикация на github.",
+    "img": "https://avatars0.githubusercontent.com/u/6200624?v=3&s=400",
+    "video": "https://www.youtube.com/embed/1injvRwJ1Qc",
+    "content": "",
+    "tags": [
+      "gulp",
+      "git"
+    ]
+  }
