@@ -78,5 +78,17 @@
       "angular",
       "material"
     ]
+  },
+  {
+    "id": "8",
+    "name": "tdd-intro",
+    "title": "Разработка через тестирование",
+    "description": "Мастерская full stack javascript. Введение в TDD Test Driven Development. Обзор юнит тестирования с помощью jasmine.",
+    "img": "http://quintagroup.com/services/python/test-driven-development/tdd.png",
+    "tags": [
+      "tdd",
+      "bdd",
+      "jasmine"
+    ]
   }
 ]
