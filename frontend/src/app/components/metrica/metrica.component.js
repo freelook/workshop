@@ -3,10 +3,13 @@
 
   angular
     .module('frontend')
-    .factory('metrica', function ($window) {
+    .factory('metrica', function ($window, $rootScope) {
       return {
         init: function () {
-          $window.$.get('https://mc.yandex.ru/watch/38127630');
+          var route = $rootScope.$on('$routeChangeSuccess', function () {
+            $window.$.get('https://mc.yandex.ru/watch/38127630');
+          });
+          return route;
         }
       };
     })
