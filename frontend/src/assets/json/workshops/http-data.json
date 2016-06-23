@@ -1,0 +1,13 @@
+  {
+    "id": "12",
+    "name": "http-data",
+    "title": "Основы http",
+    "description": "Мастерская full stack javascript. Основы работы с http данными. Отладка кода и моки.",
+    "img": "http://www.websitepulse.com/blog/uploads/2013/03/HTTP.jpg",
+    "video": "https://www.youtube.com/embed/Ybffc6JzkaE",
+    "content": "",
+    "tags": [
+      "angular",
+      "http"
+    ]
+  }
