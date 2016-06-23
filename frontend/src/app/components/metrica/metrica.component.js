@@ -1,22 +1,27 @@
-'use strict';
+(function () {
+  'use strict';
 
-angular
-  .module('fli.core')
-  .factory('metrica', function () {
-    return {
-      init: function () {
-        $.get('https://mc.yandex.ru/watch/36744405');
-      }
-    };
-  })
-  .controller('metrica.controller', function (url) {
-    var vm = this;
-    vm.link = url.link;
-  })
-  .directive('fliMetrica', function () {
-    return {
-      controller: 'metrica.controller',
-      controllerAs: 'metrica',
-      templateUrl: 'components/core/analytics/metrica/metrica.html'
-    };
-  });
+  angular
+    .module('frontend')
+    .factory('metrica', function ($window) {
+      return {
+        init: function () {
+          $window.$.get('https://mc.yandex.ru/watch/38127630');
+        }
+      };
+    })
+    .controller('MetricaController', function ($window) {
+      var vm = this;
+      vm.open = function () {
+        $window.open('https://metrika.yandex.com/stat/?id=38127630', '_blank');
+      };
+    })
+    .directive('metrica', function () {
+      return {
+        controller: 'MetricaController',
+        controllerAs: 'metrica',
+        templateUrl: 'app/components/metrica/metrica.html'
+      };
+    });
+
+})()

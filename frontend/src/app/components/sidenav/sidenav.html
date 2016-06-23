@@ -3,11 +3,14 @@
     <div class="logo" ng-click="sidenav.main()"></div>
     <div layout="column" ng-repeat="(key,value) in ::sidenav.menu" class="menu">
       <md-button class="md-primary bold" ng-bind="key" ng-attr-aria-label="key"
-                 ng-click="sidenav.currentKey=key"></md-button>
+                 ng-click="sidenav.currentKey=sidenav.currentKey!==key?key:''"></md-button>
       <div class="item" ng-class="{active:key===sidenav.currentKey}">
         <md-button class="md-primary" ng-repeat="tag in value" ng-bind="tag" ng-attr-aria-label="tag"
                    ng-click="sidenav.tag(tag)"></md-button>
       </div>
     </div>
   </div>
+
+  <metrica></metrica>
+
 </md-sidenav>

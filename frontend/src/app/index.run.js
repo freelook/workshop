@@ -6,9 +6,11 @@
     .run(runBlock);
 
   /** @ngInject */
-  function runBlock($log, $window) {
+  function runBlock($log, $window, metrica) {
 
     $log.debug('run: workshop');
+
+    metrica.init();
 
     // production redirect
     if ($window.location.host === 'freelook.github.io') {
