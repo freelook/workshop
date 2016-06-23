@@ -1,0 +1,15 @@
+  {
+    "id": "9",
+    "name": "angular-in-action",
+    "title": "Angular в действии",
+    "description": "Мастерская full stack javascript. Начало работы с angular на рабочих примерах. Введение в html и сss компоненты.",
+    "img": "http://www.itmathrepetitor.ru/wp-content/uploads/2014/12/html-css.jpg",
+    "video": "https://www.youtube.com/embed/0fsn7scae2Y",
+    "content": "",
+    "tags": [
+      "angular",
+      "html",
+      "css",
+      "javascript"
+    ]
+  }
