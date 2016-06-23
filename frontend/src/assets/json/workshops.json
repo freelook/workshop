@@ -103,5 +103,16 @@
       "css",
       "javascript"
     ]
+  },
+  {
+    "id": "10",
+    "name": "refactoring",
+    "title": "Рефакторинг",
+    "description": "Мастерская full stack javascript. Основы рефакторинга. Введение в принципы разработки.",
+    "img": "http://ancych.ch/Design/Images/Refactoring/Process/ancych-process-refactoring-EN.jpg",
+    "tags": [
+      "angular",
+      "refactoring"
+    ]
   }
 ]
