@@ -1,0 +1,14 @@
+  {
+    "id": "13",
+    "name": "e2e-intro",
+    "title": "Введение в e2e",
+    "description": "Мастерская full stack javascript. Начало работы с e2e тестами и protractor. Введение в code coverage. Gulp команды.",
+    "img": "https://www.youtube.com/embed/QbloWL8ZDZ8",
+    "video": "https://www.youtube.com/embed/sJYwwZ8tRFA",
+    "content": "",
+    "tags": [
+      "angular",
+      "e2e",
+      "protractor"
+    ]
+  }
