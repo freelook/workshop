@@ -1,3 +1,3 @@
 # javascript full stack | workshop
 
-with ♥ freelook.info
+with ♥ [freelook.info](http://freelook.info/)
