@@ -6,7 +6,7 @@
     "img": "http://code-maven.com/img/node.png",
     "video": "https://www.youtube.com/embed/tE3B3UgnSZw",
     "content": "",
-    "prev": "setup-webstorm,
+    "prev": "setup-webstorm",
     "next": "setup-yo",
     "tags": [
       "node",
