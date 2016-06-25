@@ -6,6 +6,8 @@
   "img": "https://git-for-windows.github.io/img/git_logo.png",
   "video": "https://www.youtube.com/embed/UNknM5G4trc",
   "content": "",
+  "prev": "intro",
+  "next": "setup-webstorm",
   "tags": [
     "git",
     "webstorm"
