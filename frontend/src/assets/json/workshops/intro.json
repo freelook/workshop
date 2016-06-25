@@ -6,6 +6,8 @@
   "img": "http://www.programmableweb.com/sites/default/files/MEAN-stack.jpg",
   "video": "https://www.youtube.com/embed/sJYwwZ8tRFA",
   "content": "",
+  "prev": "",
+  "next": "setup-git",
   "tags": [
     "angular",
     "node",
