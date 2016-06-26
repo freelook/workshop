@@ -6,6 +6,8 @@
     "img": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-114/profile/profile-512_2.jpg",
     "video": "https://www.youtube.com/embed/Bmk7S_t-DKM",
     "content": "",
+    "prev": "setup-dev",
+    "next": "tdd-intro",
     "tags": [
       "angular",
       "material"
