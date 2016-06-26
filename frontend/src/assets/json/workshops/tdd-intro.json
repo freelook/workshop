@@ -6,6 +6,8 @@
     "img": "http://quintagroup.com/services/python/test-driven-development/tdd.png",
     "video": "https://www.youtube.com/embed/NQi6FnBnvcc",
     "content": "",
+    "prev": "material-intro",
+    "next": "angular-in-action",
     "tags": [
       "tdd",
       "bdd",
