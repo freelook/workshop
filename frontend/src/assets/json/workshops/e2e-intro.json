@@ -6,6 +6,8 @@
     "img": "http://g00glen00b.be/wp-content/uploads/2015/10/protractor-logo1.png",
     "video": "https://www.youtube.com/embed/QbloWL8ZDZ8",
     "content": "",
+    "prev": "http-data",
+    "next": "build",
     "tags": [
       "angular",
       "e2e",
