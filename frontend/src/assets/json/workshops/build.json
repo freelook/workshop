@@ -6,6 +6,8 @@
     "img": "https://avatars0.githubusercontent.com/u/6200624?v=3&s=400",
     "video": "https://www.youtube.com/embed/1injvRwJ1Qc",
     "content": "",
+    "prev": "e2e-intro",
+    "next": "",
     "tags": [
       "gulp",
       "git"
