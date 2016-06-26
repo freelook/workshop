@@ -6,6 +6,8 @@
     "img": "https://pbs.twimg.com/profile_images/3786155988/46ea2dd8b1bdd31a8ba61044cb5b6ebe_400x400.png",
     "video": "https://www.youtube.com/embed/Tz3aeNwIERk",
     "content": "",
+    "prev": "setup-node",
+    "next": "setup-dev",
     "tags": [
       "yeoman",
       "node",
