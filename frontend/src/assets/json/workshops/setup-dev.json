@@ -6,6 +6,8 @@
     "img": "http://wordpress.datamasonry.com/wp-content/uploads/2013/06/software-dev-agile-process.png",
     "video": "https://www.youtube.com/embed/iCmaRUOM36o",
     "content": "",
+    "prev": "setup-yo",
+    "next": "material-intro",
     "tags": [
       "git",
       "yeoman",
