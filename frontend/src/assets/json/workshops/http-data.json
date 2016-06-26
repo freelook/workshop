@@ -6,6 +6,8 @@
     "img": "http://www.websitepulse.com/blog/uploads/2013/03/HTTP.jpg",
     "video": "https://www.youtube.com/embed/Ybffc6JzkaE",
     "content": "",
+    "prev": "route",
+    "next": "e2e-intro",
     "tags": [
       "angular",
       "http"
