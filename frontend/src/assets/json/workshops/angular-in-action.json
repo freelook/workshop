@@ -6,6 +6,8 @@
     "img": "http://www.itmathrepetitor.ru/wp-content/uploads/2014/12/html-css.jpg",
     "video": "https://www.youtube.com/embed/0fsn7scae2Y",
     "content": "",
+    "prev": "tdd-intro",
+    "next": "refactoring",
     "tags": [
       "angular",
       "html",
