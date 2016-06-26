@@ -21,6 +21,7 @@
     })
     .directive('metrica', function () {
       return {
+        restrict: 'E',
         controller: 'MetricaController',
         controllerAs: 'metrica',
         templateUrl: 'app/components/metrica/metrica.html'

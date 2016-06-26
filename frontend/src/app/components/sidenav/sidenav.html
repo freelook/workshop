@@ -1,12 +1,13 @@
 <md-sidenav md-component-id="left" md-whiteframe="3">
   <div layout="column">
-    <div class="logo" ng-click="sidenav.main()"></div>
+    <a href="#/" class="logo" ng-click="sidenav.main()"></a>
     <div layout="column" ng-repeat="(key,value) in ::sidenav.menu" class="menu">
       <md-button class="md-primary bold" ng-bind="key" ng-attr-aria-label="key"
                  ng-click="sidenav.currentKey=sidenav.currentKey!==key?key:''"></md-button>
       <div class="item" ng-class="{active:key===sidenav.currentKey}">
-        <md-button class="md-primary" ng-repeat="tag in value" ng-bind="tag" ng-attr-aria-label="tag"
-                   ng-click="sidenav.tag(tag)"></md-button>
+        <md-button class="md-primary" ng-repeat="tag in value" ng-attr-aria-label="tag" ng-click="sidenav.tag(tag)">
+          <a class="link" ng-href="{{::sidenav.tagHref(tag)}}" ng-bind="tag"></a>
+        </md-button>
       </div>
     </div>
   </div>

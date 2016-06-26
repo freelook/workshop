@@ -19,14 +19,14 @@
     <md-card flex="30" flex-sm="45" flex-xs="90" ng-repeat="workshop in ::main.workshops | filter:main.tag" md-scroll-y>
       <md-card-title>
         <md-card-title-text>
-          <div class="md-headline" ng-bind="::workshop.title"></div>
+          <a class="md-headline link" ng-href="{{::main.workshopHref(workshop.name)}}" ng-bind="::workshop.title"></a>
           <div class="md-subhead">
-            <a class="link" ng-repeat="tag in ::workshop.tags" ng-bind="tag" ng-click="main.openTag(tag)"></a>
+            <a class="link" ng-repeat="tag in ::workshop.tags" ng-bind="tag" ng-href="{{main.tagHref(tag)}}"></a>
           </div>
         </md-card-title-text>
         <md-card-title-media>
           <div class="md-media-lg card-media" ng-if="::workshop.img">
-            <img ng-src="{{::workshop.img}}">
+            <a class="link" ng-href="{{::main.workshopHref(workshop.name)}}"><img ng-src="{{::workshop.img}}"></a>
           </div>
         </md-card-title-media>
       </md-card-title>

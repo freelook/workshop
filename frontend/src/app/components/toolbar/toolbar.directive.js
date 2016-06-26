@@ -8,6 +8,7 @@
   /** @ngInject */
   function toolbar() {
     return {
+      restrict: 'E',
       controller: 'ToolbarController',
       controllerAs: 'toolbar',
       templateUrl: 'app/components/toolbar/toolbar.html'

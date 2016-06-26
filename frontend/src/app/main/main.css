@@ -25,3 +25,8 @@ content.main md-card .md-subhead a {
   color: #538ed4;
   text-decoration: underline;
 }
+
+content.main md-card .md-headline.link {
+  color: inherit;
+  text-decoration: none;
+}

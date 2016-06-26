@@ -7,7 +7,9 @@
     name = 'name';
     workshops = {
       one: jasmine.createSpy().and.returnValue({
-        success: jasmine.createSpy()
+        success: jasmine.createSpy().and.returnValue({
+          error: jasmine.createSpy()
+        })
       })
     };
 

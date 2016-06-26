@@ -7,7 +7,7 @@
   <img class="img" ng-if="::workshop.item.img" ng-src="{{::workshop.item.img}}">
 
   <div class="tags block" ng-if="::workshop.item.tags">
-    <a class="link" ng-repeat="tag in ::workshop.item.tags" ng-bind="tag" ng-click="workshop.tag(tag)"></a>
+    <a class="link" ng-repeat="tag in ::workshop.item.tags" ng-bind="tag" ng-href="{{::workshop.tagHref(tag)}}"></a>
   </div>
 
   <div class="md-body-1 block" ng-if="::workshop.item.description" ng-bind="::workshop.item.description"></div>

@@ -8,6 +8,7 @@
   /** @ngInject */
   function footer() {
     return {
+      restrict: 'E',
       controller: 'FooterController',
       controllerAs: 'footer',
       templateUrl: 'app/components/footer/footer.html'

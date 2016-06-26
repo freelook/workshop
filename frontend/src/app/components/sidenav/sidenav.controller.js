@@ -12,6 +12,7 @@
     vm.menu = menu;
     vm.main = sidenav.main;
     vm.tag = sidenav.tag;
+    vm.tagHref = sidenav.tagHref;
 
   }
 })();

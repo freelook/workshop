@@ -1,11 +1,11 @@
 <!doctype html>
 <html ng-app="frontend">
   <head>
-    <title>javascript full stack | мастерская</title>
+    <title ng-bind="index.title"></title>
     <meta charset="utf-8">
     <meta name="fragment" content="!">
-    <meta name="description" content="мастерская javascript full stack">
-    <meta name="keywords" content="mongo,express,angular,node">
+    <meta name="description" ng-attr-content="{{index.description}}">
+    <meta name="keywords" ng-attr-content="{{index.keywords}}">
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
 
     <link rel="icon" type="image/x-icon" href="/favicon.ico?v=1">
