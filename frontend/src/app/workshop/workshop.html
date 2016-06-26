@@ -13,6 +13,15 @@
   <div class="md-body-1 block" ng-if="::workshop.item.description" ng-bind="::workshop.item.description"></div>
   <div class="md-body-1 block" ng-if="::workshop.item.content" ng-bind="::workshop.item.content"></div>
 
+  <div layout="row" layout-align="center center">
+    <md-button ng-if="::workshop.item.prev" class="md-icon-button md-primary" aria-label="prev" ng-click="workshop.open(workshop.item.prev)">
+      <i class="material-icons">navigate_before</i>
+    </md-button>
+    <md-button ng-if="::workshop.item.next" class="md-icon-button md-primary" aria-label="next" ng-click="workshop.open(workshop.item.next)">
+      <i class="material-icons">navigate_next</i>
+    </md-button>
+  </div>
+
 </content>
 
 <footer></footer>
