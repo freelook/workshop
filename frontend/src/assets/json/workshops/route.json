@@ -6,6 +6,8 @@
     "img": "http://2.bp.blogspot.com/-5P04d_xV7Yw/VL9W2yEOVsI/AAAAAAAAC6Y/sqbmesYs0Yg/s1600/location-icon-vector-9czEGGdRi.png",
     "video": "https://www.youtube.com/embed/KnKY9vDHen4",
     "content": "",
+    "prev": "refactoring",
+    "next": "http-data",
     "tags": [
       "angular",
       "material"
