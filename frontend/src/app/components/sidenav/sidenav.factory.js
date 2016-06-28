@@ -5,6 +5,8 @@
     .module('frontend')
     .factory('sidenav', function ($location) {
 
+      var HASH = '#!';
+
       function _path(path, search) {
         return $location.path(path).search(search || {});
       }
@@ -13,12 +15,16 @@
         return _path('/');
       }
 
+      function mainHref() {
+        return HASH + '/';
+      }
+
       function tag(tag) {
         return _path('/', {tag: tag});
       }
 
       function tagHref(tag) {
-        return ['#', '?tag='].join('/') + tag;
+        return [HASH, '?tag='].join('/') + tag;
       }
 
       function workshop(name) {
@@ -26,11 +32,12 @@
       }
 
       function workshopHref(name) {
-        return ['#', 'name', name].join('/');
+        return [HASH, 'name', name].join('/');
       }
 
       return {
         main: main,
+        mainHref: mainHref,
         tag: tag,
         tagHref: tagHref,
         workshop: workshop,

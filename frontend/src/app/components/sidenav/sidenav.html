@@ -1,6 +1,6 @@
 <md-sidenav md-component-id="left" md-whiteframe="3">
   <div layout="column">
-    <a href="#/" class="logo" ng-click="sidenav.main()"></a>
+    <a href="{{::sidenav.mainHref()}}" class="logo" ng-click="sidenav.main()"></a>
     <div layout="column" ng-repeat="(key,value) in ::sidenav.menu" class="menu">
       <md-button class="md-primary bold" ng-bind="key" ng-attr-aria-label="key"
                  ng-click="sidenav.currentKey=sidenav.currentKey!==key?key:''"></md-button>

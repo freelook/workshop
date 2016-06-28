@@ -1,4 +1,4 @@
-(function() {
+(function () {
   'use strict';
 
   angular
@@ -6,7 +6,15 @@
     .config(config);
 
   /** @ngInject */
-  function config($logProvider, toastrConfig) {
+  function config($windowProvider, $locationProvider, $logProvider, toastrConfig) {
+
+    var $window = $windowProvider.$get();
+    if (/_escaped_fragment_/.test($window.location.search)) {
+      $window.location.href = [$window.location.origin, '/#!', $window.location.search.split('_escaped_fragment_=').slice(1)[0].split('&')[0]].join('');
+    }
+
+    $locationProvider.hashPrefix('!');
+
     // Enable log
     $logProvider.debugEnabled(true);
 
