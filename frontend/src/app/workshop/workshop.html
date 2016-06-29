@@ -3,7 +3,7 @@
 <content class="workshop" flex>
 
   <iframe class="video" ng-if="::workshop.item.video" ng-src="{{::workshop.trust(workshop.item.video)}}" frameborder="0" allowfullscreen></iframe>
-  <div class="video" ng-if="!workshop.item.video" layout="column" layout-align="center center">
+  <div class="video" ng-if="::workshop.item && !workshop.item.video" layout="column" layout-align="center center">
     <i class="material-icons lock">lock</i>
   </div>
   <h3 class="md-headline block" ng-if="::workshop.item.title" ng-bind="::workshop.item.title"></h3>
