@@ -1,0 +1,15 @@
+  {
+    "id": "16",
+    "name": "seo",
+    "title": "Поисковая оптимизация",
+    "description": "Мастерская full stack javascript. Начало работы с SEO. Поисковая оптимизация одностраничных SPA приложений",
+    "img": "http://sunshinecoastseo.com/wp-content/uploads/2013/07/Sunshine-Coast-SEO.jpg",
+    "video": "",
+    "content": "",
+    "prev": "analytics",
+    "next": "",
+    "tags": [
+      "seo",
+      "analytics"
+    ]
+  }
