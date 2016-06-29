@@ -1,0 +1,15 @@
+    {
+    "id": "15",
+    "name": "analytics",
+    "title": "Аналитика",
+    "description": "Мастерская full stack javascript. Начало работы с Google Analytics и Yandex Metrica. Настройка SPA приложения для сбора аналитики посещений.",
+    "img": "http://blogtips.ru/wp-content/uploads/images/860_0_38ab35097f0a362863e6f231b5ce307a.jpg",
+    "video": "https://www.youtube.com/embed/xtNg0WD8zfc",
+    "content": "",
+    "prev": "build",
+    "next": "",
+    "tags": [
+      "analytics",
+      "metrica"
+    ]
+  }
