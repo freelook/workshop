@@ -1,6 +1,13 @@
-content.workshop iframe {
+content.workshop .video {
   width: 100%;
   height: 50vmin;
+  background: #000000;
+  text-align: center;
+}
+
+content.workshop .video .lock {
+  font-size: 100px;
+  color: #ffffff;
 }
 
 content.workshop .img {

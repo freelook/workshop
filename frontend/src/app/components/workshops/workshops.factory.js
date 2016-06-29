@@ -10,11 +10,11 @@
       }
 
       function get() {
-        return _call('frontend/src/assets/json/workshops.json');
+        return _call('assets/json/workshops.json');
       }
 
       function one(name) {
-        return _call('frontend/src/assets/json/workshops/' + name + '.json');
+        return _call('assets/json/workshops/' + name + '.json');
       }
 
       return {
@@ -22,6 +22,6 @@
         one: one
       }
     })
-    .constant('WORKSHOPS_URL', 'https://raw.githubusercontent.com/freelook/workshop/master/');
+    .constant('WORKSHOPS_URL', 'https://raw.githubusercontent.com/freelook/workshop/master/frontend/src/');
 
 })();
