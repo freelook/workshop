@@ -4,11 +4,11 @@
   angular
     .module('frontend')
     .value('menu', {
-      processes: ['tdd', 'bdd', 'agile', 'e2e'],
+      processes: ['tdd', 'bdd', 'e2e', 'agile', 'scrum'],
       frontend: ['angular', 'html', 'css', 'material'],
       backend: ['node', 'express', 'mean'],
       mobile: ['cordova', 'phonegap'],
-      tools: ['git', 'webstorm', 'nmp', 'bower', 'gulp']
+      tools: ['git', 'webstorm', 'npm', 'bower', 'gulp']
     });
 
 })();
