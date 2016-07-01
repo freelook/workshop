@@ -16,7 +16,7 @@
   <div class="md-body-1 block" ng-if="::workshop.item.description" ng-bind="::workshop.item.description"></div>
   <div class="md-body-1 block" ng-if="::workshop.item.content" ng-bind="::workshop.item.content"></div>
 
-  <div class="quiz" ng-if="workshop.quiz===1" ng-click="workshop.quiz=0;">
+  <div class="quiz" ng-if="workshop.quiz===1" ng-click="workshop.quiz=0">
     <div class="material-icons close link">close</div>
     <iframe ng-src="{{::workshop.trust(workshop.item.quiz)}}" frameborder="0"></iframe>
   </div>
@@ -25,7 +25,7 @@
     <md-button ng-if="::workshop.item.prev" class="md-icon-button md-primary" aria-label="prev" ng-click="workshop.open(workshop.item.prev)">
       <i class="material-icons">navigate_before</i>
     </md-button>
-    <md-button ng-if="::workshop.item.quiz" class="md-icon-button md-warn" aria-label="quiz" ng-click="workshop.quiz=1;">
+    <md-button ng-if="::workshop.item.quiz" class="md-icon-button md-warn" aria-label="quiz" ng-click="workshop.quiz=1">
       <i class="material-icons">school</i>
     </md-button>
     <md-button ng-if="::workshop.item.next" class="md-icon-button md-primary" aria-label="next" ng-click="workshop.open(workshop.item.next)">
