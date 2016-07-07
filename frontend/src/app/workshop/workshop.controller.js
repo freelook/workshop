@@ -6,7 +6,7 @@
     .controller('WorkshopController', WorkshopController);
 
   /** @ngInject */
-  function WorkshopController($sce, $routeParams, index, workshops, sidenav) {
+  function WorkshopController($window, $sce, $routeParams, index, workshops, sidenav) {
 
     var vm = this;
 
@@ -14,6 +14,10 @@
     vm.tag = sidenav.tag;
     vm.tagHref = sidenav.tagHref;
     vm.open = sidenav.workshop;
+
+    vm.link = function (_link) {
+      $window.open(_link, '_blank');
+    };
 
     function init() {
       workshops.one($routeParams.name)
